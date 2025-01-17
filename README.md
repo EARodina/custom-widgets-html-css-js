@@ -19,17 +19,17 @@
 | 10   | [Tabs][tabs]                       |
 | 11   | [Dropdown][dropdown]               |
 
-[profile]: 
-[timeline]: 
-[checkbox]: 
-[upload]: 
-[modal]: 
-[dnd]: 
-[pwd-checker]: 
-[sidebar]: 
-[form]: 
-[tabs]: 
-[dropdown]: 
+[profile]: https://earodina.github.io/custom-widgets-html-css-js/profile-card
+[timeline]: https://earodina.github.io/custom-widgets-html-css-js/timeline
+[checkbox]: https://earodina.github.io/custom-widgets-html-css-js/checkbox
+[upload]: https://earodina.github.io/custom-widgets-html-css-js/file-upload
+[modal]: https://earodina.github.io/custom-widgets-html-css-js/modal
+[dnd]: https://earodina.github.io/custom-widgets-html-css-js/drag-and-drop
+[pwd-checker]: https://earodina.github.io/custom-widgets-html-css-js/password-checker
+[sidebar]: https://earodina.github.io/custom-widgets-html-css-js/sidebar
+[form]: https://earodina.github.io/custom-widgets-html-css-js/sign-up-form
+[tabs]: https://earodina.github.io/custom-widgets-html-css-js/tabs
+[dropdown]: https://earodina.github.io/custom-widgets-html-css-js/dropdown
 
 ## Как запустить проект
 
