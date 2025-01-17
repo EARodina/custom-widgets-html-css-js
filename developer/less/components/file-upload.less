@@ -1,0 +1,150 @@
+.dropzone {
+  --color-border: #d4dce6;
+  --color-text: #ebebeb;
+  --color-blue: #5d43e5;
+}
+
+.dropzone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; 
+  color: var(--text-white);
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 300px;
+    max-width: 560px;
+    padding: 32px;
+    border-radius: 16px;
+    background-color: var(--bg-dark-blue);
+  }
+
+  &__title {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: var(--color-text);
+  }
+
+  &__text {
+    font-size: 18px;
+    color: #d3d3d3;
+  }
+
+  &__area {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 26px;
+    padding: 16px;
+    min-height: 256px;
+    border: 2px dashed var(--color-border);
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all .3s ease;
+    text-align: center;
+
+    &:hover {
+      background-color: #20242f;
+    }
+
+    [type="file"] {
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      cursor: pointer
+    }
+
+    .file-upload-icon svg {
+      height: 96px;
+      max-width: 96px;
+      width: 100%;
+      margin-bottom: 8px;
+      fill: var(--color-text);
+    }
+  }
+
+  &__description {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__file-info {
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      li {
+        text-align: left;
+      }
+    }
+  }
+
+  &_over {
+    border: 2px solid var(--color-blue);
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+    gap: 16px;
+
+    button {
+      flex-grow: 1;
+      min-height: 48px;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: background-color .3s ease;
+      cursor: pointer;
+      font-size: 20px;
+      color: var(--text-white);
+
+      &[type="reset"] {
+        border: 1px solid var(--color-border);
+        background-color: transparent;
+        transition: all .3s ease;
+
+        &:hover {
+          .hoverOnlyWhenSupported({
+            text-decoration: underline;
+          });
+        }
+      }
+
+      &[type="submit"] {
+        background-color: var(--color-blue);
+      }
+    }
+  }
+
+  &__actions-buttons {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__help {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    svg {
+      flex-shrink: 0;
+      fill: var(--text-white);
+    }
+  }
+}

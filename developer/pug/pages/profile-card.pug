@@ -1,0 +1,45 @@
+extends ../layout/default
+
+block title 
+  title Profile Card
+    
+block pageContent
+  .page.page_dark
+    .container
+      .profile-container
+        .profile-card
+          .profile-card__content
+            .profile-card__avatar-wrapper
+              .profile-card__avatar
+                .profile-card__avatar-inner
+                .profile-card__avatar-glow
+                .profile-card__avatar-border
+            .profile-card__profile-info
+              h2.profile-card__name John Doe
+              p.profile-card__title UX/UI Designer
+              .profile-card__stats
+                .profile-card__stat
+                  span.profile-card__stat-value 1.4k
+                  span.profile-card__stat-label Projects
+                .profile-card__stat
+                  span.profile-card__stat-value 9.6k
+                  span.profile-card__stat-label Followers
+                .profile-card__stat
+                  span.profile-card__stat-value 3.7k
+                  span.profile-card__stat-label Following
+              .profile-card__bio
+                | Creative designer with 6+ years of experience in digital product design and brand identity.
+              .profile-card__skills
+                span.profile-card__skill UI/UX
+                span.profile-card__skill Branding
+                span.profile-card__skill Motion
+              .profile-card__actions
+                button.profile-card__action-btn.primary
+                  span Follow
+                  .btn-effect
+                button.profile-card__action-btn.secondary
+                  span Message
+                  .btn-effect
+          .profile-card__shine
+          .profile-card__border
+          .profile-card__glow

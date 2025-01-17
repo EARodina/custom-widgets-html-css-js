@@ -1,0 +1,30 @@
+extends ../layout/default
+
+block title 
+  title Dropdown
+    
+block pageContent
+  .page.page_light
+    .container
+      details(open)
+        summary Select language...
+          span.material-icons-round arrow_drop_down
+        div
+          label
+            input(type='radio' name='radio')
+            span English 
+          label
+            input(type='radio' name='radio' checked)
+            span Spanish
+          label
+            input(type='radio' name='radio')
+            span Français
+          label
+            input(type='radio' name='radio')
+            span Deutsch
+          label
+            input(type='radio' name='radio')
+            span Español
+          label
+            input(type='radio' name='radio')
+            span Русский

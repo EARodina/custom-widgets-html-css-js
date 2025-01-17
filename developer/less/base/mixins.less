@@ -1,0 +1,7 @@
+.tablet(@rules) {
+  @media screen and (min-width: 768px) { @rules(); }
+}
+
+.hoverOnlyWhenSupported(@rules) {
+  @media (hover: hover) and (pointer: fine) { @rules(); }
+}

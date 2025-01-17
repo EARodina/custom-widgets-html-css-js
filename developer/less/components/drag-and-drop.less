@@ -1,0 +1,95 @@
+.groups {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 576px;
+  height: fit-content;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: var(--bg-gray);
+  border-radius: 16px;
+}
+
+.group {
+  padding: 16px;
+  background-color: var(--bg-gray);
+  border-radius: 16px;
+  border: 1px solid #e1e1e1;
+
+  &:nth-child(2) {
+    background-color: #4a56992b;
+    border: 1px solid #4a5699;
+  }
+
+  h2 {
+    margin-bottom: 16px;
+    font-size: 20px;
+  }
+}
+
+#my-team {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  min-height: 220px;
+}
+
+#team-members {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  min-height: 220px;
+}
+
+.team-member {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  width: 158px;
+  max-height: 96px;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid #e1e1e1;
+  background-color: var(--bg-gray);
+  text-align: center;
+  z-index: 1;
+
+  &:hover {
+    cursor: grab;
+  }
+
+  &__avatar {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  &__name {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    h3 {
+      font-size: 14px;
+    }
+
+    p {
+      font-size: 10px;
+    }
+  }
+}
+
+.team-member-chosen {
+  border: 1px solid #4a5699;
+}
+
+.team-member-drag {
+  opacity: 0;
+}

@@ -1,0 +1,9 @@
+root = true
+
+[*.{ts,js,css,less}]
+indent_style = space
+indent_size = 2
+
+[*.{pug,html}]
+indent_style = space
+indent_size = 4

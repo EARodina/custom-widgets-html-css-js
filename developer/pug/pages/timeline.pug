@@ -1,0 +1,75 @@
+extends ../layout/default
+
+block title 
+  title Timeline
+    
+block pageContent
+  .page
+    .container
+      ul.timeline
+        li.timeline-item
+          span.timeline-item__icon.avatar-icon
+            i.avatar
+              img(src='../../images/content/uifaces-3.jpg')
+          .new-comment
+            input(type='text' placeholder='Add a comment...')
+        li.timeline-item
+          span.timeline-item__icon.faded-icon
+            svg(width='24' height='24')
+              use(href='#pencil')
+          .timeline-item__description
+            i.avatar.small
+              img(src='../../images/content/uifaces-4.jpg')
+            span
+              a(href='#') John Doe
+              |  has changed 
+              a(href='#') 4 attributes
+              |  on 
+              time(datetime='21-01-2021') Feb 21, 2020
+        li.timeline-item
+          span.timeline-item__icon.faded-icon
+            svg(width='24' height='24')
+              use(href='#arrow-right')
+          .timeline-item__description
+            i.avatar.small
+              img(src='../../images/content/uifaces-3.jpg')
+            span
+              a(href='#') Mollie Ross
+              |  moved 
+              a(href='#') Zac Evans
+              |  to 
+              a(href='#') &#x1F4DA; Technical Test
+              |  on 
+              time(datetime='20-01-2021') Feb, 2020
+        li.timeline-item.extra-space
+          span.timeline-item__icon.filled-icon
+            svg(width='24' height='24')
+              use(href='#message')
+          .timeline-item-wrapper
+            .timeline-item__description
+              i.avatar.small
+                img(src='../../images/content/uifaces-3.jpg')
+              span
+                a(href='#') Mollie Ross
+                |  commented on 
+                time(datetime='20-01-2021') Feb 20, 2020
+            .comment
+              p
+                | I&apos;ve sent him the assignment we discussed recently, he is coming back to us this week. Regarding to our last call, I really enjoyed talking to him and so far he has the profile we are looking for. Can&apos;t wait to see his technical test, I&apos;ll keep you posted and we&apos;ll debrief it all together!&#x1F60A;
+              button.button.comment-button &#x1F44F; 2
+              button.button.comment-button.square
+                svg(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' width='24' height='24')
+                  path(fill='none' d='M0 0h24v24H0z')
+                  path(fill='currentColor' d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM7 12a5 5 0 0 0 10 0h-2a3 3 0 0 1-6 0H7z')
+            button.show-replies
+              svg.icon.icon-tabler.icon-tabler-arrow-forward(xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewbox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round')
+                path(stroke='none' d='M0 0h24v24H0z' fill='none')
+                path(d='M15 11l4 4l-4 4m4 -4h-11a4 4 0 0 1 0 -8h1')
+              | &#x9;&#x9;&#x9;&#x9;Show 3 replies
+              span.avatar-list
+                i.avatar.small
+                  img(src='../../images/content/uifaces-3.jpg')
+                i.avatar.small
+                  img(src='../../images/content/uifaces-4.jpg')
+                i.avatar.small
+                  img(src='../../images/content/uifaces-5.jpg')

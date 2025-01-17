@@ -1,0 +1,23 @@
+extends ../layout/default
+
+block title 
+  title Tabs
+    
+block pageContent
+  .page
+    .container
+      .tab-wrapper
+        .tabs
+          button.tab.button.js-tab.is-active(data-tab="content-1" data-translate-value="0") Photo
+          button.tab.button.js-tab(data-tab="content-2" data-translate-value="100") Music
+            span.notification 3
+          button.tab.button.js-tab(data-tab="content-3" data-translate-value="200") Video
+          span.tabs-slider
+        .content-wrapper 
+          .tab-content.is-active.js-tab-content(id="content-1")
+            img(src='../../images/svg/content-1.svg' alt='Content')
+          .tab-content.js-tab-content(id="content-2") 
+            img(src='../../images/svg/content-2.svg' alt='Content')
+          .tab-content.js-tab-content(id="content-3")
+            img(src='../../images/svg/content-3.svg' alt='Content')
+

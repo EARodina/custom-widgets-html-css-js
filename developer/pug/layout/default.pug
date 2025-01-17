@@ -1,0 +1,17 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        block title
+
+        link(rel="shortcut icon", href="./images/favicon.ico", type="image/x-icon")
+
+        link(rel="stylesheet", href="../../less/styles.less")
+
+    body
+        block pageContent
+        include ../components/svg-sprite
+
+        script(src="../../js/library/jquery-1.11.3.min.js") 
+        script(src="../../js/main.js")

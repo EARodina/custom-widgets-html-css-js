@@ -1,0 +1,44 @@
+extends ../layout/default
+
+block title 
+  title Checkbox
+    
+block pageContent
+  .page.page_light
+    .container
+      .checkbox-widget 
+        .checkbox-widget__header Which country are you from?
+        .checkbox-widget__list
+          .checkbox
+            label.checkbox-wrapper
+              input.checkbox-input.visually-hidden(type='checkbox')
+              span.checkbox-tile
+                span.checkbox-icon
+                  svg
+                    use(href="#flag-kenya")
+                span.checkbox-label Kenya
+          .checkbox
+            label.checkbox-wrapper
+              input.checkbox-input.visually-hidden(type='checkbox')
+              span.checkbox-tile
+                span.checkbox-icon
+                  svg
+                    use(href="#flag-uganda")
+                span.checkbox-label Uganda
+          .checkbox
+            label.checkbox-wrapper
+              input.checkbox-input.visually-hidden(type='checkbox')
+              span.checkbox-tile
+                span.checkbox-icon
+                  svg
+                    use(href="#flag-tanzania")
+                span.checkbox-label Tanzania
+          .checkbox
+            label.checkbox-wrapper
+              input.checkbox-input.visually-hidden(type='checkbox')
+              span.checkbox-tile
+                span.checkbox-icon
+                  svg
+                    use(href="#flag-nigeria")
+                span.checkbox-label Nigeria
+        button.checkbox-widget__btn(type="button") Next

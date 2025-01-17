@@ -1,0 +1,103 @@
+details {
+	position: relative;
+
+	summary {
+		position: relative;
+		list-style: none;
+		padding: 12px;
+		padding-right: 48px;
+		border: 2px solid var(--color-light-blue);
+		background-color: var(--bg-white);
+		border-radius: 8px;
+		cursor: pointer;
+		font-family: @default-font-family--bold;
+
+		&::-webkit-details-marker {
+			display: none;
+		}
+
+		&:focus {
+			outline: 0;
+			box-shadow: 0 0 0 4px #b5c9fc;
+		}
+
+		&:hover,
+		&:focus {
+      .hoverOnlyWhenSupported({
+        border-color: var(--color-dark-blue);
+      });
+		}
+
+		span {
+			position: absolute;
+			top: 50%;
+			right: 12px;
+			transform: translateY(-50%);
+			transform-origin: center center;
+		}
+	}
+
+	&[open] summary {
+		border-color: var(--color-dark-blue);
+		box-shadow: 0 0 0 4px #b5c9fc;
+
+		span {
+			transform: scaleY(-1) translateY(50%);
+		}
+	}
+
+  .material-icons-round {
+		display: inline-block;
+    font-family: 'Material Icons Round';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+	}
+
+	div {
+		display: flex;
+		flex-direction: column;
+		margin-top: 8px;
+		padding: 8px;
+		background-color: var(--bg-white);
+		border: 2px solid var(--color-light-blue);
+		border-radius: 8px;
+		box-shadow: 0 3px 7px 0 #c8cfe1;
+
+		label {
+			position: relative;
+			cursor: pointer;
+		}
+
+		input {
+			-webkit-appearance: none;
+			appearance: none;
+			visibility: hidden;
+			position: absolute;
+		}
+
+		input:checked + span {
+			background-color: #e9efff;
+			color: var(--color-dark-blue);
+		}
+
+		span:hover {
+			background-color: #e9efff;
+		}
+
+		span {
+			display: block;
+			margin-top: 8px;
+			padding: 10px;
+			border-radius: 8px;
+		}
+	}
+}

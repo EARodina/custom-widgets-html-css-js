@@ -1,0 +1,31 @@
+extends ../layout/default
+
+block title 
+  title Sign Up Form
+    
+block pageContent
+  .page.page_light
+    .container
+      .sign-up
+        .sign-up__form
+          form.form(action="") 
+            h1.form-heading Hello, friend!
+            .form-input
+              img(src='https://i.postimg.cc/1zgS8WTF/user.png' alt='icon' height='20')
+              input(type='text' placeholder='Name')
+            .form-input
+              img(src='https://i.postimg.cc/DZBPRgvC/email.png' alt='icon' height='12')
+              input(type='email' placeholder='Email')
+            .form-input
+              img(src='https://i.postimg.cc/Nj5SDK4q/password.png' alt='icon' height='20')
+              input(type='password' placeholder='Password')
+            .form-input
+              img(src='https://i.postimg.cc/Nj5SDK4q/password.png' alt='icon' height='20')
+              input(type='password' placeholder='Repeat Password')
+            button.form-submit(type='submit') CREATE ACCOUNT
+            p.form-conditions
+              | Already have an account? 
+              a(href='#') Sign in
+        .sign-up__panel
+          h1 Glad to see you!
+          p Welcome, please fill in the blanks for sign up

@@ -1,0 +1,42 @@
+extends ../layout/default
+
+block title 
+  title Drag and Drop
+    
+block pageContent
+  .page
+    .container
+      .groups
+        .group
+          h2 Members
+          #team-members
+            article.team-member
+              img.team-member__avatar(src='../../images/content/uifaces-2.jpg' alt='John Doe')
+              .team-member__name
+                h3 John Doe
+                p Frontend Developer
+            article.team-member
+              img.team-member__avatar(src='../../images/content/uifaces-1.jpg' alt='Mollie Ross')
+              .team-member__name
+                h3 Mollie Ross
+                p Frontend Developer
+            article.team-member
+              img.team-member__avatar(src='../../images/content/uifaces-3.jpg' alt='Mollie Ross')
+              .team-member__name
+                h3 Mollie Ross
+                p Frontend Developer
+            article.team-member
+              img.team-member__avatar(src='../../images/content/uifaces-4.jpg' alt='John Doe')
+              .team-member__name
+                h3 John Doe
+                p Frontend Developer
+            article.team-member
+              img.team-member__avatar(src='../../images/content/uifaces-5.jpg' alt='John Doe')
+              .team-member__name
+                h3 John Doe
+                p Frontend Developer
+        .group
+          h2 My Team
+          #my-team
+
+  script(src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js")
